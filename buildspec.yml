@@ -1,4 +1,4 @@
-version: 0.2
+version:!0.2
 
 phases:
   build:
@@ -12,10 +12,11 @@ phases:
       - cd $SDK_GO_ROOT
       - make ci-test
       - cd $SDK_CB_ROOT
-      - #echo Compiling the Go code...
+      - !echo Compiling the Go code...
   post_build:
     commands:
       - echo Build completed on `date`
-#artifacts:
+!artifacts:
 #  files:
 #    - hello
+ 
